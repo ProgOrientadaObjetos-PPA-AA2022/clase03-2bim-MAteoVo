@@ -44,5 +44,10 @@ public class Reporte {
     public String obtenerCiclo() {
         return ciclo;
     }
+    @Override
+    public String toString(){
+        String cadena = String.format("%s\nCarrera: %s\nCiclo:%s\n",obtenerNombre(),obtenerCarrera(),obtenerCiclo());
+        return cadena;
+    }
 
 }
